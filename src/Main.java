@@ -1,18 +1,29 @@
-public class Main
-{
-    public static void main(String[] args){
+import java.util.Scanner;
 
-    int term=5;
-    for(int i=1;i<=term;i++)
-    {
-    for(int n=5;n>=0;n=n-1)
-    {
-        System.out.print("* ");
+public class Main {
+    public static void main(String[] args) {
+        {
+            boolean valid = true;
+            while(valid)
+            {
+            double Temp = 0;
+            Scanner in = new Scanner(System.in);
+            System.out.println("What is your Temp in Celsius");
+            if (in.hasNextDouble()) {
+                Temp = in.nextDouble();
+                System.out.println("Your temp in Fahrenheit is " + (Temp*1.8 + 32));
+
+                valid = false;
+            } else {
+                System.out.println("invalid input try again");
+
+            }
+        }
+
+        }
     }
-    System.out.println();//new line
 }
-}
-}
+
 
 
 
